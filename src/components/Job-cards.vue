@@ -1,5 +1,5 @@
 <script setup>
-import jobCard from './job-card.vue';
+import jobCard from '@/components/Job-card.vue';
 import JobData from '@/assets/jobs.json';
 import {ref,defineProps,onMounted, reactive} from 'vue';
 import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
