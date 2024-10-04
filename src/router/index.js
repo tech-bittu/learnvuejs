@@ -15,6 +15,7 @@ import TodoList from "@/components/Projects/TodoList.vue";
 import TemplateRefView from "@/views/TemplateRefView.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
+import AsyncView from "@/views/asyncView.vue";
 
 const router = createRouter({
     history:createWebHistory(import.meta.env.BASE_URL),
@@ -88,6 +89,11 @@ const router = createRouter({
             path:'/template-ref',
             name:'template-ref',
             component:TemplateRefView
+        },
+        {
+            path:'/async-compo',
+            name:'async-compo',
+            component:AsyncView
         },
         {
             path:'/:catchAll(.*)',
