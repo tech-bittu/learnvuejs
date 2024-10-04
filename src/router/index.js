@@ -13,9 +13,10 @@ import HooksViews from "@/views/HooksViews.vue";
 import WatchView from "@/views/WatchView.vue"
 import TodoList from "@/components/Projects/TodoList.vue";
 import TemplateRefView from "@/views/TemplateRefView.vue";
+import AsyncView from "@/views/asyncView.vue";
+import PointCollectorView from "@/views/pointCollectorView.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
-import AsyncView from "@/views/asyncView.vue";
 
 const router = createRouter({
     history:createWebHistory(import.meta.env.BASE_URL),
@@ -94,6 +95,11 @@ const router = createRouter({
             path:'/async-compo',
             name:'async-compo',
             component:AsyncView
+        },
+        {
+            path:'/point-collector',
+            name:'point-collector',
+            component:PointCollectorView
         },
         {
             path:'/:catchAll(.*)',
