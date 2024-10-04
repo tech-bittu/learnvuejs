@@ -11,6 +11,8 @@ import SlotVue from '@/views/SlotView.vue';
 import ProvideView from '@/views/ProvideView.vue';
 import HooksViews from "@/views/HooksViews.vue";
 import WatchView from "@/views/WatchView.vue"
+import TodoList from "@/components/Projects/TodoList.vue";
+import TemplateRefView from "@/views/TemplateRefView.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -21,6 +23,11 @@ const router = createRouter({
             path:'/',
             name:'home',
             component:HomeView,
+        },
+        {
+            path:'/todo-list',
+            name:'todo list',
+            component:TodoList,
         },
         {
             path:'/jobs',
@@ -76,6 +83,11 @@ const router = createRouter({
             path:'/watch',
             name:'watch',
             component:WatchView
+        },
+        {
+            path:'/template-ref',
+            name:'template-ref',
+            component:TemplateRefView
         },
         {
             path:'/:catchAll(.*)',
