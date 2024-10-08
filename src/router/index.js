@@ -19,6 +19,7 @@ import CustomVDirectiveView from "@/views/v-directiveView.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 import DynamicComponentView from "@/views/DynamicComponentView.vue";
+import DataFetchingView from "@/views/dataFetchingView.vue";
 
 const router = createRouter({
     history:createWebHistory(import.meta.env.BASE_URL),
@@ -112,6 +113,11 @@ const router = createRouter({
             path:'/dynamic-component',
             name:'dynamic-component',
             component:DynamicComponentView
+        },
+        {
+            path:'/data-fetching',
+            name:'data-fetching',
+            component:DataFetchingView
         },
         {
             path:'/:catchAll(.*)',
