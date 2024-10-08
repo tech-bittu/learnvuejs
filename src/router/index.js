@@ -15,8 +15,10 @@ import TodoList from "@/components/Projects/TodoList.vue";
 import TemplateRefView from "@/views/TemplateRefView.vue";
 import AsyncView from "@/views/asyncView.vue";
 import PointCollectorView from "@/views/pointCollectorView.vue";
+import CustomVDirectiveView from "@/views/v-directiveView.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
+import DynamicComponentView from "@/views/DynamicComponentView.vue";
 
 const router = createRouter({
     history:createWebHistory(import.meta.env.BASE_URL),
@@ -100,6 +102,16 @@ const router = createRouter({
             path:'/point-collector',
             name:'point-collector',
             component:PointCollectorView
+        },
+        {
+            path:'/custom-directive',
+            name:'custom-directive',
+            component:CustomVDirectiveView
+        },
+        {
+            path:'/dynamic-component',
+            name:'dynamic-component',
+            component:DynamicComponentView
         },
         {
             path:'/:catchAll(.*)',
