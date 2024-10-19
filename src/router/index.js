@@ -11,15 +11,16 @@ import SlotVue from '@/views/SlotView.vue';
 import ProvideView from '@/views/ProvideView.vue';
 import HooksViews from "@/views/HooksViews.vue";
 import WatchView from "@/views/WatchView.vue"
-import TodoList from "@/components/Projects/TodoList.vue";
 import TemplateRefView from "@/views/TemplateRefView.vue";
 import AsyncView from "@/views/asyncView.vue";
 import PointCollectorView from "@/views/pointCollectorView.vue";
 import CustomVDirectiveView from "@/views/v-directiveView.vue";
-
-import { createRouter, createWebHistory } from "vue-router";
 import DynamicComponentView from "@/views/DynamicComponentView.vue";
 import DataFetchingView from "@/views/dataFetchingView.vue";
+/*****************project*************** */  
+import TodoList from "@/project-view/TodoListView.vue";
+
+import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
     history:createWebHistory(import.meta.env.BASE_URL),

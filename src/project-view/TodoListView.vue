@@ -1,7 +1,6 @@
 <script setup>
-import TodoList from '@/components/Projects/TodoList.vue';
+import TodoList from '@/project-components/todo-list.vue';
 </script>
 <template>
-    <h1> To Do List </h1>
     <TodoList />
 </template>
